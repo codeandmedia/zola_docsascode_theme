@@ -1,4 +1,4 @@
-base_url = "docsascode.codeandmedia.com"
+base_url = "https://docsascode.codeandmedia.com"
 compile_sass = true
 title = "Docs title"
 highlight_code = true
