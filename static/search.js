@@ -166,7 +166,7 @@ function debounce(func, wait) {
         return r.doc.body !== "";
       });
       if (results.length === 0) {
-        $searchResultsHeader.innerText = `Ничего похожего на «${term}» не найдено`;
+        $searchResultsHeader.innerText = `Nothing like «${term}»`;
         return;
       }
   
