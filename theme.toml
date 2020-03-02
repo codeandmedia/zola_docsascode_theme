@@ -1,9 +1,9 @@
-name = "Docs"
-description = "A modern simple theme related to docs as code methodology"
+name = "Docsascode_theme"
+description = "A modern simple Zola's theme related to docs as code methodology"
 license = "MIT"
-homepage = " "
-min_version = "0.9.0"
-demo = " "
+homepage = "https://github.com/codeandmedia/zola_docsascode_theme"
+min_version = "0.10.0"
+demo = "docsascode.codeandmedia.com"
 
 [author]
 name = "Roman Soldatenkov"
