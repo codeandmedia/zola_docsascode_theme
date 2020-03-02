@@ -1,0 +1,10 @@
+name = "Docs"
+description = "A modern simple theme related to docs as code methodology"
+license = "MIT"
+homepage = " "
+min_version = "0.9.0"
+demo = " "
+
+[author]
+name = "Roman Soldatenkov"
+homepage = "https://codeandmedia.com"
