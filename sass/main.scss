@@ -205,7 +205,6 @@ main {
   flex-flow: row wrap;
   font-size: 1rem;
 
-
   date {
     @include color(color, --second-text-color, $theme-light-second-text-color);
   }
@@ -252,12 +251,13 @@ main {
   }
   
   pre {
-  width:92vw;
+  width:88%;
   }
 
   #mobile {
     display: block;
     outline:none;
+    color:royalblue;
   }
   
   select {
