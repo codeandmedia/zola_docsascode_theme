@@ -5,7 +5,7 @@ I was inspired by [Linode's approach](https://www.linode.com/2020/01/17/docs-as-
 The repo contains a theme for [Zola](https://www.getzola.org/) (the best static site generator I've ever seen) and dockerfile for building Docker images with Nginx-alpine.  You can pull to your Docker an [image with demo-content](https://hub.docker.com/r/codeandmedia/zola_docsascode_theme)
 
 ```
-codeandmedia/zola_docsascode_theme:latest
+codeandmedia/docsascode-theme:latest
 ```
 
 ## Perks
