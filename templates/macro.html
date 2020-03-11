@@ -3,10 +3,10 @@
         <ul id="bger">
         {% for subsection in section.subsections | sort %}
             {% set subsection_item = get_section(path=subsection) %}  
-            <li>&#128448;&nbsp;<a href="{{ subsection_item.permalink | safe }}">{{ subsection_item.title  }}</a></li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABmJLR0QA/wD/AP+gvaeTAAABAElEQVRYhWNgGAWjYGABIwMDA4N7x/H/xGpgZWbq21JqXkw7J6ECFhgjP8ScoOLvP38zrNp/Ld275yTj1hLzIpq6DAqYSFHMyc7KEOaoxc3DwZbm3XOyj1aOQgbwKCYmBGHg/advDGsOXf/77ccfZpq5jIGBYWeFJSMLYWWo4PaTtwyHLjxkMFISYg6zkmdgYyEpEogGGTNOMjAwIKXBiWtOEqVRXICTIdtTjUFRnIcmDkMHcAfOyCA+iukJaBM/VASjDqQUjDqQUjDqQErBqAMpBaMOpBSMOpBSMOpASsGoAykFow6kFIw6kFIw6kBKwaB3ILzjDhtqGAWjYBSgAgAXxS82HNeMiAAAAABJRU5ErkJggg==" width="20px" />&nbsp;<a href="{{ subsection_item.permalink | safe }}">{{ subsection_item.title  }}</a></li>
             {% endfor %}
             {% for subpage in section.pages %}
-            <li>&#128463;&nbsp;<a href="{{ subpage.permalink | safe }}">{{ subpage.title  }}</a></li> 
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABmJLR0QA/wD/AP+gvaeTAAAA10lEQVRYhe3XMQ6CMBiG4a9EMBKN52DUaPQGuBg8gAdwd+AKOLhzDidvgJKQeCJxcC5S/lo0+d71h/I0JE0KMFlKN4izorb1kaHvVZfjamFrPQBvoI3irKj3+eOZnMt7F4dndVea0iRSkzBYbs9lZfquE+B45CPdRWoaBjNTpBMg0B3pDAh0QzoFAuZI50DADNkLEGiPHLjAHPLGI1ABmOuGXwde0/XHZzanm3bW2y9uG4HSCJRGoDQCpREojUBpBEojUBqB0giURqC0nwc2XtybLtTsX3oBXXB0cyGhErcAAAAASUVORK5CYII=" width="20px" />&nbsp;<a href="{{ subpage.permalink | safe }}">{{ subpage.title  }}</a></li> 
         {% endfor %}
         </ul>
 {% endmacro tree %}
