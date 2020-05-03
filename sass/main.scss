@@ -42,7 +42,7 @@
 body {
   text-rendering: optimizeLegibility;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
-  font-size: 1.25rem;
+  font-size: 0.9375rem;
   line-height:1.5;
   display: flex;
   flex-flow: row wrap;
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5 {
 
 
 h2, h3 {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h1 {
@@ -156,6 +156,7 @@ nav {
   #breadcrumbs {
     display: flex;
     flex-flow: row wrap;
+    font-style:italic;
   }
 
   ul {
@@ -220,7 +221,6 @@ main {
 #toc {
   list-style: none;
   @include color(color, --second-text-color, $theme-light-second-text-color);
-  font-size: 1rem;
   margin-top: 1rem;
  
   ul {
