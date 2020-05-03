@@ -3,10 +3,10 @@
         <ul id="bger">
         {% for subsection in section.subsections | sort %}
             {% set subsection_item = get_section(path=subsection) %}  
-            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaklEQVQ4y2NMS0v7z0ACmDVrFiM+eSYGEgEhBzDCFBCyGd0gXOpJdiEhl5JtIC5DSTYQ3avohjJhsxUZk2oo2V7GZSjZsUy1dEgIsBDrEmJ9QHsXEnLJ4A1DYpPPaBiOhiEZgJHUMKO7CwH5a0OQ+ip35QAAAABJRU5ErkJggg==" width="16px" />&nbsp;<a href="{{ subsection_item.permalink | safe }}">{{ subsection_item.title  }}</a></li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAc0lEQVQ4y+3TMQ6AIAwF0A+RwOgJISxcA7gGC4ELumocdGJxUtON/qnTS5vmC6VN8s5GfEwpRQBACOGqrefz2BMAyD/YM97ZqLRZAUCCKN7ZTWmTyMCxKSlIejKDs4C19bxQYaPb/BQGGXwF1tYzRYfHfANBqhzGEyLNxAAAAABJRU5ErkJggg==" width="16px" />&nbsp;<a href="{{ subsection_item.permalink | safe }}">{{ subsection_item.title  }}</a></li>
             {% endfor %}
             {% for subpage in section.pages %}
-            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAc0lEQVQ4y+3TMQ6AIAwF0A+RwOgJISxcA7gGC4ELumocdGJxUtON/qnTS5vmC6VN8s5GfEwpRQBACOGqrefz2BMAyD/YM97ZqLRZAUCCKN7ZTWmTyMCxKSlIejKDs4C19bxQYaPb/BQGGXwF1tYzRYfHfANBqhzGEyLNxAAAAABJRU5ErkJggg==" width="16px" />&nbsp;<a href="{{ subpage.permalink | safe }}">{{ subpage.title  }}</a></li> 
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaklEQVQ4y2NMS0v7z0ACmDVrFiM+eSYGEgEhBzDCFBCyGd0gXOpJdiEhl5JtIC5DSTYQ3avohjJhsxUZk2oo2V7GZSjZsUy1dEgIsBDrEmJ9QHsXEnLJ4A1DYpPPaBiOhiEZgJHUMKO7CwH5a0OQ+ip35QAAAABJRU5ErkJggg==" width="16px" />&nbsp;<a href="{{ subpage.permalink | safe }}">{{ subpage.title  }}</a></li> 
         {% endfor %}
         </ul>
 {% endmacro tree %}
