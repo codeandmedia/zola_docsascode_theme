@@ -101,3 +101,5 @@ Also, by default you have two taxonomies: _tags_ and _authors_. It's optional, n
 Done. I told you Zola is amazing :) 
 
 Anyway you can rewrite theme for your own wishes with Zola ([link to documentation](https://www.getzola.org/documentation/getting-started/installation/))
+
+Roman Soldatenkov
