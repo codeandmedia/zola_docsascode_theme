@@ -8,6 +8,12 @@ The repo contains a theme for [Zola](https://www.getzola.org/) (the best static 
 codeandmedia/docsascode-theme:latest
 ```
 
+If you would use Docker on MacBook M1 processors \ Raspberry Pi4 64bit \ Amazon Graviton or another ARM64 - just fork the ARM64 brunch or push
+
+```
+codeandmedia/docsascode-theme-arm64:latest
+```
+
 ## Perks
 
 * light / dark switcher
