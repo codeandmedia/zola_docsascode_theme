@@ -1,43 +1,38 @@
 @charset "utf-8";
 
 * {
-  padding:0;
-  margin: 0;
-  }
-  
-  ::selection {
-    background: blue;
-    color: #fafafa;
-  }
+padding:0;
+margin: 0;
+}
 
-  html {
-    font-kerning: normal;
-    text-rendering: optimizeLegibility;
-    scroll-behavior: smooth;
-    
-      &.theme-change-active{
-        animation: fade-in ease-out 0.6s;
-      }
-    }
+::selection {
+  background: blue;
+  color: #fafafa;
+}
 
-    $theme-light-first-text-color: #444;
-    $theme-dark-first-text-color: #888;
-    $theme-light-second-text-color: #999;
-    $theme-dark-second-text-color: #666;
-    $theme-light-bg-color:#fafafa;
-    $theme-dark-bg-color:#262626;
-  
-    @mixin color($property, $var, $fallback){
-      #{$property}: $fallback; 
-      #{$property}: var($var, $fallback);
-    }
-  
-    .theme-dark {
-      --first-text-color: #{$theme-dark-first-text-color};
-      --second-text-color:#{$theme-dark-second-text-color};
-      --bg-color: #{$theme-dark-bg-color};
-    }
+html {
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
 
+$theme-light-first-text-color: #444;
+$theme-dark-first-text-color: #888;
+$theme-light-second-text-color: #999;
+$theme-dark-second-text-color: #666;
+$theme-light-bg-color:#fafafa;
+$theme-dark-bg-color:#262626;
+
+@mixin color($property, $var, $fallback){
+  #{$property}: $fallback;
+  #{$property}: var($var, $fallback);
+}
+
+.theme-dark {
+  --first-text-color: #{$theme-dark-first-text-color};
+  --second-text-color:#{$theme-dark-second-text-color};
+  --bg-color: #{$theme-dark-bg-color};
+}
 
 body {
   text-rendering: optimizeLegibility;
@@ -51,21 +46,6 @@ body {
   @include color(color, --first-text-color, $theme-light-first-text-color);
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  
-  50% {
-    opacity:0.8;
-  }
-  
-  100% {
-    opacity: 1;
-  }
-  }
-
- 
 .theme-button{
   display: none;
   padding:0;
@@ -105,7 +85,7 @@ a:visited {
   color:royalblue;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   .anchor {
     visibility: hidden;
     text-decoration: none;
@@ -189,7 +169,6 @@ main {
     margin:1rem 0 0;
 
     ul, ol {
-      list-style-position: inside;
       margin:0 0 1rem 1rem;
     }
   

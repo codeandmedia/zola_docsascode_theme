@@ -8,6 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
       <title>{% block title %}{{ config.title }}{% endblock title %}</title>     
       <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
+      <script type="text/javascript" src="{{ get_url(path='initialize-theme.js') | safe }}"></script>
     </head>
 
     <body>
@@ -66,7 +67,7 @@
       {% endblock content %}
       </main>
 
-      <script type="text/javascript" src="{{ get_url(path="themes.js") | safe }}"></script>
+      <script type="text/javascript" src="{{ get_url(path='update-theme-elements.js') | safe }}"></script>
 
       <script>
         function burger() {
